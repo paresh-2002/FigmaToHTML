@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/index.css">
 </head>
 
@@ -18,20 +22,26 @@
         <div class="container">
             <div class="max-container">
                 <nav>
-                    <a href="#">
+                    <a href="#" class="img-logo">
                         <img src="./images/header_logo.png" alt="header logo">
                     </a>
-                    <div class="item-list">
+                    <div class="navbar-toggler">
+                        <button class="navbar-toggler-btn">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                    <div class="item-list" id="navMenu">
                         <ul>
                             <li><a href="">Become a renter</a></li>
                             <li><a href="">Rental deals</a></li>
                             <li><a href="">How it work</a></li>
                             <li><a href="">Why choose us</a></li>
                         </ul>
-                    </div>
-                    <div class="btn-list">
-                        <a href="">Sign in</a>
-                        <button>Sign up</button>
+
+                        <div class="btn-list">
+                            <a href="">Sign in</a>
+                            <button>Sign up</button>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -184,7 +194,7 @@
 
             </div>
         </section>
-        
+
         <section class="section-three">
             <div class="container">
                 <div class="max-container-top">
@@ -201,20 +211,73 @@
         </section>
 
         <section class="section-four">
-             <div class="container">
+            <div class="container">
                 <div class="max-container-top">
                     <div class="section-content-top">
                         <a href="">TESTIMONIALS</a>
                         <h2>What peole say about us?</h2>
                     </div>
-                    <div class="section-content-bottom">
-                        <div class="testimkonial">
-                            <div class="testimkonial-content">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper section-content-bottom">
+                            <div class="swiper-slide testimkonial-content">
                                 <img src='./images/Rectangle 8.png' alt="">
-                                   <div class="testimkonial-dec-content">
-                                       
-                                   </div>
-                               </div>
+                                <div class="testimkonial-dec-content">
+                                    <h5>5.0 <span>stars</span></h5>
+                                    <div class="stars">
+                                        <img src="./images/Star 1.png" alt="">
+                                        <img src="./images/Star 1.png" alt="">
+                                        <img src="./images/Star 1.png" alt="">
+                                        <img src="./images/Star 1.png" alt="">
+                                        <img src="./images/Star 1.png" alt="">
+                                    </div>
+                                    <div class="testimkonial-dec-bottom">
+                                        <p>“I feel very secure when using caretall's services. Your customer care team
+                                            is
+                                            very enthusiastic and the driver is always on time.”</p>
+                                        <h6>Charlie Johnson</h6>
+                                        <p class="loc">From New York, US</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimkonial-content">
+                                <img src='./images/Rectangle 8.png' alt="">
+                                <div class="testimkonial-dec-content">
+                                    <h5>5.0 <span>stars</span></h5>
+                                    <div class="stars">
+                                        <img src="./images/Star 1.png" alt="">
+                                        <img src="./images/Star 1.png" alt="">
+                                        <img src="./images/Star 1.png" alt="">
+                                        <img src="./images/Star 1.png" alt="">
+                                        <img src="./images/Star 1.png" alt="">
+                                    </div>
+                                    <div class="testimkonial-dec-bottom">
+                                        <p>“I feel very secure when using caretall's services. Your customer care team
+                                            is
+                                            very enthusiastic and the driver is always on time.”</p>
+                                        <h6>Charlie Johnson</h6>
+                                        <p class="loc">From New York, US</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide testimkonial-content">
+                                <img src='./images/Rectangle-right.png' alt="">
+                                <div class="testimkonial-dec-content">
+                                    <h5>5.0 <span>stars</span></h5>
+                                    <div class="stars">
+                                        <img src="./images/Star 1.png" alt="">
+                                        <img src="./images/Star 1.png" alt="">
+                                        <img src="./images/Star 1.png" alt="">
+                                        <img src="./images/Star 1.png" alt="">
+                                        <img src="./images/Star 1.png" alt="">
+                                    </div>
+                                    <div class="testimkonial-dec-bottom">
+                                        <p>“I have been using your services for 3 years. Your service is great, I will
+                                            continue to use your service.”</p>
+                                        <h6>Jenny Wilson</h6>
+                                        <p class="loc">From New York, US</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -223,28 +286,28 @@
 
         <section class="section-five">
             <div class="container">
-                    <div class="download-content">
-                        <div class="content">
-                            <a href="">DOWNLOAD</a>
-                            <h2>Download Rentcars App for <span> FREE</span></h2>
-                            <p>For faster, easier booking and exclusive deals.</p>
-                            <div class="social-img">
-                                <img src="./images/play-stor.png" alt="">
-                                <img src="./images/app-stor.png" alt="">
-                            </div>
-                        </div>
-        
-                        <div class="download-img">
-                            <img src="./images/iPhone-14-Pro.png" class="car-img" alt="">
-                            
-                            <div class="download-shape">
-                                <img src="./images/shape.png" alt="">
-                            </div>
+                <div class="download-content">
+                    <div class="content">
+                        <a href="">DOWNLOAD</a>
+                        <h2>Download Rentcars App for <span> FREE</span></h2>
+                        <p>For faster, easier booking and exclusive deals.</p>
+                        <div class="social-img">
+                            <img src="./images/play-stor.png" alt="">
+                            <img src="./images/app-stor.png" alt="">
                         </div>
                     </div>
+
+                    <div class="download-img">
+                        <img src="./images/iPhone-14-Pro.png" class="car-img" alt="">
+
+                        <div class="download-shape">
+                            <img src="./images/shape.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        
+
     </main>
 
     <footer>
@@ -257,7 +320,7 @@
                         </div>
                         <div class="footer-logo-content">
                             <div class="content">
-                                <img src="./images/location-footer.png" alt="">
+                                <img src="./images/footer-location.png" alt="">
                                 <p>25566 Hc 1, Glenallen, Alaska, 99588, USA</p>
                             </div>
                             <div class="content">
@@ -332,6 +395,17 @@
         </div>
     </footer>
     <script src="./index.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            freeMode: true,
+        });
+    </script>
 </body>
 
 </html>
